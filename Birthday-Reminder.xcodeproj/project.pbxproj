@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61028EB82944118B0051531D /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EB72944118B0051531D /* UITableView+Ext.swift */; };
+		61028EBA294413E50051531D /* BaseToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EB9294413E50051531D /* BaseToastView.swift */; };
+		61028EBC294416910051531D /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EBB294416910051531D /* BaseLoadingView.swift */; };
+		61028EBE294416BF0051531D /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EBD294416BF0051531D /* HomeServices.swift */; };
+		61028EC02944171F0051531D /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EBF2944171F0051531D /* UIViewController+Ext.swift */; };
+		61028EC3294420110051531D /* HomeViewController+HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EC2294420110051531D /* HomeViewController+HomeService.swift */; };
+		61028EC5294429E50051531D /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61028EC4294429E50051531D /* UINavigationController+Ext.swift */; };
+		611298672940A91000DCDB24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611298662940A91000DCDB24 /* AppDelegate.swift */; };
+		611298692940A91000DCDB24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611298682940A91000DCDB24 /* SceneDelegate.swift */; };
+		6112986E2940A91000DCDB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6112986C2940A91000DCDB24 /* Main.storyboard */; };
+		611298702940A91200DCDB24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6112986F2940A91200DCDB24 /* Assets.xcassets */; };
+		611298732940A91200DCDB24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611298712940A91200DCDB24 /* LaunchScreen.storyboard */; };
+		6112987D2940A94000DCDB24 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6112987B2940A94000DCDB24 /* SettingsViewController.swift */; };
+		6112988E2940BEE800DCDB24 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6112988D2940BEE800DCDB24 /* BaseViewController.swift */; };
+		611298922940C2A600DCDB24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611298902940C2A600DCDB24 /* HomeViewController.swift */; };
+		6117CF48294518B9001FC476 /* AppSettingsEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF47294518B9001FC476 /* AppSettingsEnums.swift */; };
+		6117CF4B29451FA3001FC476 /* SettingsViewControllerDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF4A29451FA3001FC476 /* SettingsViewControllerDelegates.swift */; };
+		6117CF4D29452A67001FC476 /* SettingsViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF4C29452A67001FC476 /* SettingsViewController+Delegates.swift */; };
+		6117CF5029452A87001FC476 /* NightModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF4F29452A87001FC476 /* NightModeViewController.swift */; };
+		6117CF5229452AA2001FC476 /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF5129452AA2001FC476 /* AppSettingsManager.swift */; };
+		6117CF5629453642001FC476 /* UIImagePickerController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF5529453642001FC476 /* UIImagePickerController+Ext.swift */; };
+		6117CF5829456739001FC476 /* Codable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117CF5729456739001FC476 /* Codable+Ext.swift */; };
+		6122D2D82941EF6C005A202E /* CreateBirthdayTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2D72941EF6C005A202E /* CreateBirthdayTableView.swift */; };
+		6122D2DC2941EFAF005A202E /* CreateBirthdayViewController+TextFieldDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2DB2941EFAF005A202E /* CreateBirthdayViewController+TextFieldDelegates.swift */; };
+		6122D2DF2941F00A005A202E /* HomeViewController+UITableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2DE2941F00A005A202E /* HomeViewController+UITableViewDelegates.swift */; };
+		6122D2E42941F2A3005A202E /* BaseUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2E32941F2A3005A202E /* BaseUIImageView.swift */; };
+		6122D2EB2941FEB4005A202E /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2EA2941FEB4005A202E /* UIView+Ext.swift */; };
+		6122D2ED294206F9005A202E /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2EC294206F9005A202E /* UIStoryboard+Ext.swift */; };
+		6122D2EF29420BB7005A202E /* BaseUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2EE29420BB7005A202E /* BaseUITableViewController.swift */; };
+		6122D2F429420E35005A202E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2F329420E35005A202E /* Coordinator.swift */; };
+		6122D2F62942105D005A202E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2F52942105D005A202E /* AppCoordinator.swift */; };
+		6122D2F829421075005A202E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2F729421075005A202E /* HomeCoordinator.swift */; };
+		6122D2FB294214DB005A202E /* HomeViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2FA294214DB005A202E /* HomeViewController+Delegates.swift */; };
+		6122D2FE29421588005A202E /* CreateHomeViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2FD29421588005A202E /* CreateHomeViewControllerConfigurator.swift */; };
+		6122D30029421C56005A202E /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D2FF29421C56005A202E /* SettingsCoordinator.swift */; };
+		6122D30329422E89005A202E /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D30229422E89005A202E /* Reminder.swift */; };
+		6122D30529422EEC005A202E /* HomeViewController+ReminderCreatedDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D30429422EEC005A202E /* HomeViewController+ReminderCreatedDelegates.swift */; };
+		6122D3092942420C005A202E /* ContectPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D3082942420C005A202E /* ContectPickerViewController.swift */; };
+		6122D30B29424783005A202E /* BaseUIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D30A29424783005A202E /* BaseUIDatePicker.swift */; };
+		6122D30D29425885005A202E /* BaseErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122D30C29425885005A202E /* BaseErrorCodes.swift */; };
+		613E196D2943C416005B6F8C /* SearchUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E196C2943C416005B6F8C /* SearchUITextField.swift */; };
+		613E196F2943CCB7005B6F8C /* BaseUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E196E2943CCB7005B6F8C /* BaseUITableView.swift */; };
+		613E19722943D968005B6F8C /* BaseBirthdayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613E19702943D967005B6F8C /* BaseBirthdayTableViewCell.swift */; };
+		613E19732943D968005B6F8C /* BaseBirthdayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613E19712943D968005B6F8C /* BaseBirthdayTableViewCell.xib */; };
+		6176BD8C29412412000F05AE /* CreateBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6176BD8A29412411000F05AE /* CreateBirthdayViewController.swift */; };
+		619782852940C9D400371561 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619782842940C9D400371561 /* SettingsTableView.swift */; };
+		6197828A2940CC0200371561 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619782892940CC0200371561 /* HomeView.swift */; };
+		6197828C2940DE6500371561 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6197828B2940DE6500371561 /* UIImage+Ext.swift */; };
+		619782952940E91E00371561 /* UIBarButtonItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619782942940E91E00371561 /* UIBarButtonItem+Ext.swift */; };
+		619782982940E9FD00371561 /* SettingsViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619782972940E9FD00371561 /* SettingsViewControllerConfigurator.swift */; };
+		6197829B2940EA2100371561 /* HomeViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6197829A2940EA2100371561 /* HomeViewControllerConfigurator.swift */; };
+		61A63BF129433D1700D02EA3 /* ReminderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A63BF029433D1700D02EA3 /* ReminderFactory.swift */; };
+		61BBEE802942682D00A5F07A /* CreateReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BBEE7F2942682D00A5F07A /* CreateReminderService.swift */; };
+		61BBEE822942686200A5F07A /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BBEE812942686200A5F07A /* SQLiteManager.swift */; };
+		BB57CF5A9ADA6EE6817417B0 /* Pods_Birthday_Reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490B2263039BD9A414EB7A26 /* Pods_Birthday_Reminder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13049F0BDC3C2179E021585F /* Pods-Birthday-Reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthday-Reminder.release.xcconfig"; path = "Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder.release.xcconfig"; sourceTree = "<group>"; };
+		490B2263039BD9A414EB7A26 /* Pods_Birthday_Reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birthday_Reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61028EB72944118B0051531D /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		61028EB9294413E50051531D /* BaseToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseToastView.swift; sourceTree = "<group>"; };
+		61028EBB294416910051531D /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
+		61028EBD294416BF0051531D /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
+		61028EBF2944171F0051531D /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		61028EC2294420110051531D /* HomeViewController+HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+HomeService.swift"; sourceTree = "<group>"; };
+		61028EC4294429E50051531D /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
+		611298632940A91000DCDB24 /* Birthday-Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Birthday-Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		611298662940A91000DCDB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		611298682940A91000DCDB24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6112986D2940A91000DCDB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6112986F2940A91200DCDB24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		611298722940A91200DCDB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		611298742940A91200DCDB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6112987B2940A94000DCDB24 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6112988D2940BEE800DCDB24 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		611298902940C2A600DCDB24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6117CF47294518B9001FC476 /* AppSettingsEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsEnums.swift; sourceTree = "<group>"; };
+		6117CF4A29451FA3001FC476 /* SettingsViewControllerDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerDelegates.swift; sourceTree = "<group>"; };
+		6117CF4C29452A67001FC476 /* SettingsViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController+Delegates.swift"; sourceTree = "<group>"; };
+		6117CF4F29452A87001FC476 /* NightModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightModeViewController.swift; sourceTree = "<group>"; };
+		6117CF5129452AA2001FC476 /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
+		6117CF5529453642001FC476 /* UIImagePickerController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Ext.swift"; sourceTree = "<group>"; };
+		6117CF5729456739001FC476 /* Codable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Ext.swift"; sourceTree = "<group>"; };
+		6122D2D72941EF6C005A202E /* CreateBirthdayTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBirthdayTableView.swift; sourceTree = "<group>"; };
+		6122D2DB2941EFAF005A202E /* CreateBirthdayViewController+TextFieldDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateBirthdayViewController+TextFieldDelegates.swift"; sourceTree = "<group>"; };
+		6122D2DE2941F00A005A202E /* HomeViewController+UITableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UITableViewDelegates.swift"; sourceTree = "<group>"; };
+		6122D2E32941F2A3005A202E /* BaseUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIImageView.swift; sourceTree = "<group>"; };
+		6122D2EA2941FEB4005A202E /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		6122D2EC294206F9005A202E /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		6122D2EE29420BB7005A202E /* BaseUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITableViewController.swift; sourceTree = "<group>"; };
+		6122D2F329420E35005A202E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6122D2F52942105D005A202E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6122D2F729421075005A202E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		6122D2FA294214DB005A202E /* HomeViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Delegates.swift"; sourceTree = "<group>"; };
+		6122D2FD29421588005A202E /* CreateHomeViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHomeViewControllerConfigurator.swift; sourceTree = "<group>"; };
+		6122D2FF29421C56005A202E /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		6122D30229422E89005A202E /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		6122D30429422EEC005A202E /* HomeViewController+ReminderCreatedDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+ReminderCreatedDelegates.swift"; sourceTree = "<group>"; };
+		6122D3082942420C005A202E /* ContectPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContectPickerViewController.swift; sourceTree = "<group>"; };
+		6122D30A29424783005A202E /* BaseUIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIDatePicker.swift; sourceTree = "<group>"; };
+		6122D30C29425885005A202E /* BaseErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorCodes.swift; sourceTree = "<group>"; };
+		613E196C2943C416005B6F8C /* SearchUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUITextField.swift; sourceTree = "<group>"; };
+		613E196E2943CCB7005B6F8C /* BaseUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITableView.swift; sourceTree = "<group>"; };
+		613E19702943D967005B6F8C /* BaseBirthdayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBirthdayTableViewCell.swift; sourceTree = "<group>"; };
+		613E19712943D968005B6F8C /* BaseBirthdayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseBirthdayTableViewCell.xib; sourceTree = "<group>"; };
+		6176BD8A29412411000F05AE /* CreateBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBirthdayViewController.swift; sourceTree = "<group>"; };
+		619782842940C9D400371561 /* SettingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
+		619782892940CC0200371561 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6197828B2940DE6500371561 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		619782942940E91E00371561 /* UIBarButtonItem+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Ext.swift"; sourceTree = "<group>"; };
+		619782972940E9FD00371561 /* SettingsViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerConfigurator.swift; sourceTree = "<group>"; };
+		6197829A2940EA2100371561 /* HomeViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerConfigurator.swift; sourceTree = "<group>"; };
+		61A63BF029433D1700D02EA3 /* ReminderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderFactory.swift; sourceTree = "<group>"; };
+		61BBEE7F2942682D00A5F07A /* CreateReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderService.swift; sourceTree = "<group>"; };
+		61BBEE812942686200A5F07A /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		751D305A81C335D8E39FB399 /* Pods-Birthday-Reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birthday-Reminder.debug.xcconfig"; path = "Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		611298602940A91000DCDB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB57CF5A9ADA6EE6817417B0 /* Pods_Birthday_Reminder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428C0B07CC8F6DF1DDC6E455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				490B2263039BD9A414EB7A26 /* Pods_Birthday_Reminder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6112985A2940A91000DCDB24 = {
+			isa = PBXGroup;
+			children = (
+				611298652940A91000DCDB24 /* Birthday-Reminder */,
+				611298642940A91000DCDB24 /* Products */,
+				90EB4CDC616F690A361029B4 /* Pods */,
+				428C0B07CC8F6DF1DDC6E455 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		611298642940A91000DCDB24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				611298632940A91000DCDB24 /* Birthday-Reminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		611298652940A91000DCDB24 /* Birthday-Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				611298832940BD2E00DCDB24 /* App Delegates */,
+				611298872940BDC600DCDB24 /* Configuration */,
+				6122D2F229420E29005A202E /* Coordinators */,
+				611298892940BDD900DCDB24 /* Core */,
+				61A63BEF29433D0D00D02EA3 /* Factories */,
+				6122D30129422E60005A202E /* Models */,
+				611298852940BDA700DCDB24 /* Resources */,
+				6112988A2940BDE600DCDB24 /* Reusable Views */,
+				611298842940BD9200DCDB24 /* Scenes */,
+				6122D2E52941F5FA005A202E /* Services */,
+				611298862940BDB100DCDB24 /* Storyboards */,
+				6122D2E72941FA49005A202E /* Utilities */,
+			);
+			path = "Birthday-Reminder";
+			sourceTree = "<group>";
+		};
+		611298832940BD2E00DCDB24 /* App Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				611298662940A91000DCDB24 /* AppDelegate.swift */,
+				611298682940A91000DCDB24 /* SceneDelegate.swift */,
+			);
+			path = "App Delegates";
+			sourceTree = "<group>";
+		};
+		611298842940BD9200DCDB24 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6197828D2940E05900371561 /* Create */,
+				6112988F2940C28800DCDB24 /* Home */,
+				611298882940BDCF00DCDB24 /* Settings */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		611298852940BDA700DCDB24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6112986F2940A91200DCDB24 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		611298862940BDB100DCDB24 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6112986C2940A91000DCDB24 /* Main.storyboard */,
+				611298712940A91200DCDB24 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		611298872940BDC600DCDB24 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				611298742940A91200DCDB24 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		611298882940BDCF00DCDB24 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6117CF4E29452A79001FC476 /* Child ViewControoler */,
+				619782962940E9F400371561 /* Configurator  */,
+				6117CF4929451F9B001FC476 /* Delegates */,
+				6112988B2940BDF600DCDB24 /* View */,
+				6112988C2940BDFC00DCDB24 /* ViewController */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		611298892940BDD900DCDB24 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6117CF46294518AC001FC476 /* Enums */,
+				619782942940E91E00371561 /* UIBarButtonItem+Ext.swift */,
+				6197828B2940DE6500371561 /* UIImage+Ext.swift */,
+				6117CF5529453642001FC476 /* UIImagePickerController+Ext.swift */,
+				61028EC4294429E50051531D /* UINavigationController+Ext.swift */,
+				6122D2EC294206F9005A202E /* UIStoryboard+Ext.swift */,
+				61028EB72944118B0051531D /* UITableView+Ext.swift */,
+				6122D2EA2941FEB4005A202E /* UIView+Ext.swift */,
+				61028EBF2944171F0051531D /* UIViewController+Ext.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6112988A2940BDE600DCDB24 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				61028EBB294416910051531D /* BaseLoadingView.swift */,
+				61028EB9294413E50051531D /* BaseToastView.swift */,
+				6122D30A29424783005A202E /* BaseUIDatePicker.swift */,
+				6122D2E32941F2A3005A202E /* BaseUIImageView.swift */,
+				613E196E2943CCB7005B6F8C /* BaseUITableView.swift */,
+				6122D2EE29420BB7005A202E /* BaseUITableViewController.swift */,
+				6112988D2940BEE800DCDB24 /* BaseViewController.swift */,
+				6122D3082942420C005A202E /* ContectPickerViewController.swift */,
+				613E196C2943C416005B6F8C /* SearchUITextField.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		6112988B2940BDF600DCDB24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				619782842940C9D400371561 /* SettingsTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6112988C2940BDFC00DCDB24 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6112987B2940A94000DCDB24 /* SettingsViewController.swift */,
+				6117CF4C29452A67001FC476 /* SettingsViewController+Delegates.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6112988F2940C28800DCDB24 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				618720F82943BC74009A0BFE /* TableView Cells */,
+				619782992940EA1500371561 /* Configurator  */,
+				6122D2F9294214CE005A202E /* Delegates */,
+				619782882940CBEB00371561 /* View */,
+				619782862940CB8F00371561 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6117CF46294518AC001FC476 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6117CF47294518B9001FC476 /* AppSettingsEnums.swift */,
+				6122D30C29425885005A202E /* BaseErrorCodes.swift */,
+				6117CF5729456739001FC476 /* Codable+Ext.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6117CF4929451F9B001FC476 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6117CF4A29451FA3001FC476 /* SettingsViewControllerDelegates.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6117CF4E29452A79001FC476 /* Child ViewControoler */ = {
+			isa = PBXGroup;
+			children = (
+				6117CF4F29452A87001FC476 /* NightModeViewController.swift */,
+			);
+			path = "Child ViewControoler";
+			sourceTree = "<group>";
+		};
+		6122D2E52941F5FA005A202E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61BBEE7F2942682D00A5F07A /* CreateReminderService.swift */,
+				61028EBD294416BF0051531D /* HomeServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6122D2E72941FA49005A202E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				61BBEE812942686200A5F07A /* SQLiteManager.swift */,
+				6117CF5129452AA2001FC476 /* AppSettingsManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6122D2F229420E29005A202E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6122D2F329420E35005A202E /* Coordinator.swift */,
+				6122D2F52942105D005A202E /* AppCoordinator.swift */,
+				6122D2F729421075005A202E /* HomeCoordinator.swift */,
+				6122D2FF29421C56005A202E /* SettingsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		6122D2F9294214CE005A202E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6122D2FA294214DB005A202E /* HomeViewController+Delegates.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6122D2FC29421575005A202E /* Configurator  */ = {
+			isa = PBXGroup;
+			children = (
+				6122D2FD29421588005A202E /* CreateHomeViewControllerConfigurator.swift */,
+			);
+			path = "Configurator ";
+			sourceTree = "<group>";
+		};
+		6122D30129422E60005A202E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6122D30229422E89005A202E /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		618720F82943BC74009A0BFE /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				613E19702943D967005B6F8C /* BaseBirthdayTableViewCell.swift */,
+				613E19712943D968005B6F8C /* BaseBirthdayTableViewCell.xib */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		619782862940CB8F00371561 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				611298902940C2A600DCDB24 /* HomeViewController.swift */,
+				6122D2DE2941F00A005A202E /* HomeViewController+UITableViewDelegates.swift */,
+				6122D30429422EEC005A202E /* HomeViewController+ReminderCreatedDelegates.swift */,
+				61028EC2294420110051531D /* HomeViewController+HomeService.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		619782882940CBEB00371561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				619782892940CC0200371561 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6197828D2940E05900371561 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6122D2FC29421575005A202E /* Configurator  */,
+				6197828F2940E06900371561 /* View */,
+				6197828E2940E06100371561 /* ViewController */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6197828E2940E06100371561 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6176BD8A29412411000F05AE /* CreateBirthdayViewController.swift */,
+				6122D2DB2941EFAF005A202E /* CreateBirthdayViewController+TextFieldDelegates.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6197828F2940E06900371561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6122D2D72941EF6C005A202E /* CreateBirthdayTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		619782962940E9F400371561 /* Configurator  */ = {
+			isa = PBXGroup;
+			children = (
+				619782972940E9FD00371561 /* SettingsViewControllerConfigurator.swift */,
+			);
+			path = "Configurator ";
+			sourceTree = "<group>";
+		};
+		619782992940EA1500371561 /* Configurator  */ = {
+			isa = PBXGroup;
+			children = (
+				6197829A2940EA2100371561 /* HomeViewControllerConfigurator.swift */,
+			);
+			path = "Configurator ";
+			sourceTree = "<group>";
+		};
+		61A63BEF29433D0D00D02EA3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				61A63BF029433D1700D02EA3 /* ReminderFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		90EB4CDC616F690A361029B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				751D305A81C335D8E39FB399 /* Pods-Birthday-Reminder.debug.xcconfig */,
+				13049F0BDC3C2179E021585F /* Pods-Birthday-Reminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		611298622940A91000DCDB24 /* Birthday-Reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 611298772940A91200DCDB24 /* Build configuration list for PBXNativeTarget "Birthday-Reminder" */;
+			buildPhases = (
+				542BDAF8202C04F05F2F1B40 /* [CP] Check Pods Manifest.lock */,
+				6112985F2940A91000DCDB24 /* Sources */,
+				611298602940A91000DCDB24 /* Frameworks */,
+				611298612940A91000DCDB24 /* Resources */,
+				AC74E8B446FE638F93EB85F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Birthday-Reminder";
+			productName = "Birthday-Reminder";
+			productReference = 611298632940A91000DCDB24 /* Birthday-Reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6112985B2940A91000DCDB24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					611298622940A91000DCDB24 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 6112985E2940A91000DCDB24 /* Build configuration list for PBXProject "Birthday-Reminder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6112985A2940A91000DCDB24;
+			productRefGroup = 611298642940A91000DCDB24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				611298622940A91000DCDB24 /* Birthday-Reminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		611298612940A91000DCDB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611298732940A91200DCDB24 /* LaunchScreen.storyboard in Resources */,
+				611298702940A91200DCDB24 /* Assets.xcassets in Resources */,
+				6112986E2940A91000DCDB24 /* Main.storyboard in Resources */,
+				613E19732943D968005B6F8C /* BaseBirthdayTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		542BDAF8202C04F05F2F1B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Birthday-Reminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC74E8B446FE638F93EB85F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Birthday-Reminder/Pods-Birthday-Reminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6112985F2940A91000DCDB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6122D2DF2941F00A005A202E /* HomeViewController+UITableViewDelegates.swift in Sources */,
+				61BBEE802942682D00A5F07A /* CreateReminderService.swift in Sources */,
+				6122D30529422EEC005A202E /* HomeViewController+ReminderCreatedDelegates.swift in Sources */,
+				613E196F2943CCB7005B6F8C /* BaseUITableView.swift in Sources */,
+				6122D2D82941EF6C005A202E /* CreateBirthdayTableView.swift in Sources */,
+				6122D2FE29421588005A202E /* CreateHomeViewControllerConfigurator.swift in Sources */,
+				619782852940C9D400371561 /* SettingsTableView.swift in Sources */,
+				6197828C2940DE6500371561 /* UIImage+Ext.swift in Sources */,
+				6197828A2940CC0200371561 /* HomeView.swift in Sources */,
+				6112988E2940BEE800DCDB24 /* BaseViewController.swift in Sources */,
+				6122D2F829421075005A202E /* HomeCoordinator.swift in Sources */,
+				6122D30329422E89005A202E /* Reminder.swift in Sources */,
+				611298672940A91000DCDB24 /* AppDelegate.swift in Sources */,
+				6117CF4B29451FA3001FC476 /* SettingsViewControllerDelegates.swift in Sources */,
+				619782952940E91E00371561 /* UIBarButtonItem+Ext.swift in Sources */,
+				6117CF5629453642001FC476 /* UIImagePickerController+Ext.swift in Sources */,
+				6117CF5229452AA2001FC476 /* AppSettingsManager.swift in Sources */,
+				6122D2FB294214DB005A202E /* HomeViewController+Delegates.swift in Sources */,
+				61028EC3294420110051531D /* HomeViewController+HomeService.swift in Sources */,
+				61028EC02944171F0051531D /* UIViewController+Ext.swift in Sources */,
+				613E19722943D968005B6F8C /* BaseBirthdayTableViewCell.swift in Sources */,
+				6117CF5829456739001FC476 /* Codable+Ext.swift in Sources */,
+				611298692940A91000DCDB24 /* SceneDelegate.swift in Sources */,
+				61028EC5294429E50051531D /* UINavigationController+Ext.swift in Sources */,
+				6122D2F62942105D005A202E /* AppCoordinator.swift in Sources */,
+				6122D30D29425885005A202E /* BaseErrorCodes.swift in Sources */,
+				6117CF4D29452A67001FC476 /* SettingsViewController+Delegates.swift in Sources */,
+				6122D2E42941F2A3005A202E /* BaseUIImageView.swift in Sources */,
+				6117CF5029452A87001FC476 /* NightModeViewController.swift in Sources */,
+				6122D2EB2941FEB4005A202E /* UIView+Ext.swift in Sources */,
+				6122D2F429420E35005A202E /* Coordinator.swift in Sources */,
+				6112987D2940A94000DCDB24 /* SettingsViewController.swift in Sources */,
+				61028EBA294413E50051531D /* BaseToastView.swift in Sources */,
+				61A63BF129433D1700D02EA3 /* ReminderFactory.swift in Sources */,
+				6176BD8C29412412000F05AE /* CreateBirthdayViewController.swift in Sources */,
+				6122D2EF29420BB7005A202E /* BaseUITableViewController.swift in Sources */,
+				6122D2DC2941EFAF005A202E /* CreateBirthdayViewController+TextFieldDelegates.swift in Sources */,
+				6122D2ED294206F9005A202E /* UIStoryboard+Ext.swift in Sources */,
+				61BBEE822942686200A5F07A /* SQLiteManager.swift in Sources */,
+				61028EBE294416BF0051531D /* HomeServices.swift in Sources */,
+				6122D3092942420C005A202E /* ContectPickerViewController.swift in Sources */,
+				613E196D2943C416005B6F8C /* SearchUITextField.swift in Sources */,
+				619782982940E9FD00371561 /* SettingsViewControllerConfigurator.swift in Sources */,
+				61028EB82944118B0051531D /* UITableView+Ext.swift in Sources */,
+				6117CF48294518B9001FC476 /* AppSettingsEnums.swift in Sources */,
+				6122D30B29424783005A202E /* BaseUIDatePicker.swift in Sources */,
+				6122D30029421C56005A202E /* SettingsCoordinator.swift in Sources */,
+				6197829B2940EA2100371561 /* HomeViewControllerConfigurator.swift in Sources */,
+				611298922940C2A600DCDB24 /* HomeViewController.swift in Sources */,
+				61028EBC294416910051531D /* BaseLoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6112986C2940A91000DCDB24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6112986D2940A91000DCDB24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		611298712940A91200DCDB24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				611298722940A91200DCDB24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		611298752940A91200DCDB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		611298762940A91200DCDB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		611298782940A91200DCDB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751D305A81C335D8E39FB399 /* Pods-Birthday-Reminder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Birthday-Reminder/Configuration/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shadudiix.Birthday-Reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		611298792940A91200DCDB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13049F0BDC3C2179E021585F /* Pods-Birthday-Reminder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7A8MFWTQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Birthday-Reminder/Configuration/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shadudiix.Birthday-Reminder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6112985E2940A91000DCDB24 /* Build configuration list for PBXProject "Birthday-Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611298752940A91200DCDB24 /* Debug */,
+				611298762940A91200DCDB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		611298772940A91200DCDB24 /* Build configuration list for PBXNativeTarget "Birthday-Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611298782940A91200DCDB24 /* Debug */,
+				611298792940A91200DCDB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6112985B2940A91000DCDB24 /* Project object */;
+}

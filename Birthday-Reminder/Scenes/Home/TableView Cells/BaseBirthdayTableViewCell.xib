@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="BaseBirthdayTableViewCell" customModule="Birthday_Reminder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332.66666666666669" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shady K. Maadawy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agc-TL-6tw">
+                        <rect key="frame" x="74.000000000000014" y="17" width="194.33333333333337" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R23-NC-fMv" customClass="BaseUIImageView" customModule="Birthday_Reminder" customModuleProvider="target">
+                        <rect key="frame" x="10" y="9" width="54" height="57"/>
+                        <color key="tintColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="R23-NC-fMv" secondAttribute="height" multiplier="1:1" id="0FY-PO-PNr"/>
+                            <constraint firstAttribute="width" constant="54" id="U9F-dE-436"/>
+                        </constraints>
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Turns 25, on Oct, 22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mx-js-wTz">
+                        <rect key="frame" x="74.000000000000014" y="37.333333333333336" width="194.33333333333337" height="21.666666666666664"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMY-fh-4wA">
+                        <rect key="frame" x="278.33333333333331" y="15" width="39.333333333333314" height="44"/>
+                        <string key="text">0
+Days</string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7mx-js-wTz" secondAttribute="bottom" constant="15" id="2Ut-Qe-Rtt"/>
+                    <constraint firstItem="jMY-fh-4wA" firstAttribute="leading" secondItem="agc-TL-6tw" secondAttribute="trailing" constant="10" id="4y2-y3-071"/>
+                    <constraint firstAttribute="trailing" secondItem="jMY-fh-4wA" secondAttribute="trailing" constant="15" id="7LL-Dn-JRr"/>
+                    <constraint firstItem="agc-TL-6tw" firstAttribute="leading" secondItem="R23-NC-fMv" secondAttribute="trailing" constant="10" id="9Fc-bG-JbK"/>
+                    <constraint firstItem="R23-NC-fMv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AHn-jP-9S3"/>
+                    <constraint firstItem="agc-TL-6tw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Amn-OG-qFx"/>
+                    <constraint firstItem="R23-NC-fMv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="C8O-4M-pYG"/>
+                    <constraint firstItem="jMY-fh-4wA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Dhb-I4-Qbp"/>
+                    <constraint firstItem="jMY-fh-4wA" firstAttribute="leading" secondItem="7mx-js-wTz" secondAttribute="trailing" constant="10" id="EQa-IC-P8r"/>
+                    <constraint firstItem="7mx-js-wTz" firstAttribute="leading" secondItem="R23-NC-fMv" secondAttribute="trailing" constant="10" id="Lou-kY-6Ix"/>
+                    <constraint firstItem="7mx-js-wTz" firstAttribute="top" secondItem="agc-TL-6tw" secondAttribute="bottom" id="RI7-xz-1rX"/>
+                    <constraint firstItem="agc-TL-6tw" firstAttribute="centerY" secondItem="R23-NC-fMv" secondAttribute="centerY" constant="-10" id="eJ5-c7-fNw"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="R23-NC-fMv" secondAttribute="bottom" constant="10" id="jf5-rn-YHB"/>
+                    <constraint firstAttribute="bottom" secondItem="jMY-fh-4wA" secondAttribute="bottom" constant="15" id="ywe-w6-7eT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="personBirthdayLabel" destination="7mx-js-wTz" id="4Tp-Kv-Fnn"/>
+                <outlet property="personDaysCountDownLabel" destination="jMY-fh-4wA" id="vfh-KZ-lNg"/>
+                <outlet property="personImageView" destination="R23-NC-fMv" id="IaS-Ha-Pf8"/>
+                <outlet property="personNameLabel" destination="agc-TL-6tw" id="Oxl-j2-ONT"/>
+            </connections>
+            <point key="canvasLocation" x="174.80916030534351" y="59.154929577464792"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="R23-NC-fMv">
+            <size key="intrinsicContentSize" width="23.333333333333332" height="20.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
